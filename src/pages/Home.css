@@ -1,0 +1,71 @@
+.home {
+  height: 100vh;
+  background-color: #1b1c1d;
+  color: white;
+}
+
+.home .image-wrapper {
+  height: 100vh;
+  background-image: url("../assets/img/nas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+.home .row {
+  display: flex;
+}
+
+.home .column {
+  flex: 50%;
+}
+
+.home .column.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .top-div,
+.home .bottom-div {
+  display: flex;
+}
+
+.home .bottom-div {
+  flex: 45%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.home .top-div {
+  flex: 55%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.home .circle-text {
+  height: 15rem;
+  width: 20rem;
+  border-radius: 10rem;
+  background-color: #1b1c1d;
+  position: relative;
+  left: -10rem;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+  .home .circle-text {
+    left: 0;
+    padding-left: 2rem;
+  }
+
+  .home .column.left {
+    visibility: hidden;
+  }
+}

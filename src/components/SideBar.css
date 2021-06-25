@@ -1,0 +1,33 @@
+.side-bar {
+  background-color: #1b1c1d;
+  border-left: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+  color: white;
+}
+
+.side-bar .item {
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.side-bar .item.active {
+  color: cyan;
+}
+
+.side-bar .item a {
+  color: white;
+}
+
+.side-bar .nav-items {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .side-bar .nav-items {
+    display: block;
+  }
+}

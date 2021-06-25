@@ -1,22 +1,45 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import { NavBar, SideBar } from "./components";
+import { About, Contact, Home, Projects } from "./pages";
 import "./App.css";
-import { Header, Routes } from "./components";
+
+const pages = ["Home", "About", "Projects", "Contact"];
 
 function App() {
-  const pages = ["Home", "About", "Projects", "Contact"];
-  const [page, setPage] = useState(pages[0]);
-  const history = useHistory();
-
-  const onItemClick = (item: string) => {
-    setPage(item);
-    history.push(`/${item}`);
-  };
+  const [activePage, setActivePage] = useState(pages[0]);
 
   return (
-    <div className="App">
-      <Routes />
-      <Header activeItem={page} onClick={onItemClick} items={pages} />
+    <div className="app">
+      <NavBar
+        pages={pages}
+        activePage={activePage}
+        setActivePage={setActivePage}
+      />
+      <main>
+        <section>
+          <Switch>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route>404 not found.</Route>
+          </Switch>
+        </section>
+        <SideBar
+          pages={pages}
+          activePage={activePage}
+          setActivePage={setActivePage}
+        />
+      </main>
     </div>
   );
 }

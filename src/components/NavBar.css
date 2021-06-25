@@ -1,0 +1,100 @@
+.nav-bar {
+  position: absolute;
+  z-index: 100;
+  background-color: gray;
+  display: flex;
+  top: 8%;
+  left: 8%;
+  right: 8%;
+  color: white;
+  border-radius: 3rem;
+  height: 5rem;
+  font-weight: bold;
+}
+
+.nav-bar .left {
+  flex: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .left img {
+  height: 4.5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: relative;
+  left: 0.3rem;
+}
+
+.nav-bar .left .name {
+  padding-left: 1rem;
+}
+
+.nav-bar .right {
+  flex: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .nav-items {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-bar .nav-item {
+  height: 100%;
+  width: 100%;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.nav-bar .nav-item.active {
+  color: cyan;
+}
+
+.nav-bar .nav-item:hover {
+  cursor: pointer;
+  animation-name: hvr-pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.nav-bar .resume {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .content {
+  font-size: 1rem;
+  margin-right: 2.5em !important;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
