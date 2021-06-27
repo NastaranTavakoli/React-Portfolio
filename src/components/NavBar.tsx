@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Icon } from "semantic-ui-react";
-import { useHistory } from "react-router-dom";
+import history from "../history";
 import "./NavBar.css";
 
 type NavBarProps = {
@@ -14,8 +14,6 @@ export const NavBar: React.FC<NavBarProps> = ({
   activePage,
   setActivePage,
 }) => {
-  const history = useHistory();
-
   return (
     <div className="nav-bar">
       <div className="left">

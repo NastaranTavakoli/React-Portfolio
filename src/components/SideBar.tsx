@@ -1,5 +1,5 @@
 import React from "react";
-import {useHistory } from "react-router-dom";
+import history from "../history";
 import "./SideBar.css";
 
 type SideBarProps = {
@@ -13,8 +13,6 @@ export const SideBar: React.FC<SideBarProps> = ({
   activePage,
   setActivePage,
 }) => {
-  const history = useHistory();
-
   return (
     <aside className="side-bar">
       <div className="top">
