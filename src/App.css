@@ -1,5 +1,16 @@
 main {
-  position: absolute;
-  top: 0;
+  width: 100vw;
   display: flex !important;
+  justify-content: space-between;
+}
+
+section {
+  flex-grow: 1;
+  margin-right: 4rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-right: 5rem;
+  }
 }

@@ -44,6 +44,11 @@ export const SideBar: React.FC<SideBarProps> = ({
             <i className="github icon large"></i>
           </a>
         </div>
+        <div className="item">
+          <a href="mailto:nastaran.tavakoli.91@gmail.com">
+            <i className="envelope icon large"></i>
+          </a>
+        </div>
       </div>
     </aside>
   );

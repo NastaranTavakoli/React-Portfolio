@@ -1,0 +1,33 @@
+.about {
+  background-color: #1b1c1d;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15rem;
+  padding-bottom: 1rem;
+  padding-left: 8vw;
+  padding-right: 4vw;
+  height: max(100%, 100vh);
+}
+
+.about img {
+  height: 4.5rem;
+  margin: 0.2rem;
+}
+
+.about .ui.section.divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: aqua !important;
+}
+
+.about .header {
+  color: gray !important;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-left: 3rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+  }
+}

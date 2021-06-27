@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory, Redirect } from "react-router-dom";
 import { NavBar, SideBar } from "./components";
 import { About, Contact, Home, Projects } from "./pages";
 import "./App.css";
@@ -7,7 +7,12 @@ import "./App.css";
 const pages = ["Home", "About", "Projects", "Contact"];
 
 function App() {
-  const [activePage, setActivePage] = useState(pages[0]);
+  const history = useHistory();
+  let path = history.location.pathname;
+  path = path.slice(1, path.length);
+  const [activePage, setActivePage] = useState(
+    pages.includes(path) ? path : "Home"
+  );
 
   return (
     <div className="app">
@@ -31,7 +36,7 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
-            <Route>404 not found.</Route>
+            <Redirect to="Home" />
           </Switch>
         </section>
         <SideBar
