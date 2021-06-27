@@ -1,5 +1,4 @@
 import React from "react";
-import { Button, Image } from "semantic-ui-react";
 import "./About.css";
 
 type AboutProps = {};
@@ -13,9 +12,9 @@ export const About: React.FC<AboutProps> = () => {
             <div className="header">LANGUAGES</div>
             <div className="ui section divider"></div>
             <div className="description">
-              <img src="/assets/img/Csharp.png"></img>
-              <img src="/assets/img/Js.jpg"></img>
-              <img src="/assets/img/sql.jpg"></img>
+              <img src="/assets/img/Csharp.png" alt=""></img>
+              <img src="/assets/img/Js.jpg" alt=""></img>
+              <img src="/assets/img/sql.jpg" alt=""></img>
             </div>
           </div>
         </div>
@@ -24,10 +23,10 @@ export const About: React.FC<AboutProps> = () => {
             <div className="header">BACK-END</div>
             <div className="ui section divider"></div>
             <div className="description">
-              <img src="/assets/img/NETCore.png"></img>
-              <img src="/assets/img/API.png"></img>
-              <img src="/assets/img/aspMVC.png"></img>
-              <img src="/assets/img/ef.png"></img>
+              <img src="/assets/img/NETCore.png" alt=""></img>
+              <img src="/assets/img/API.png" alt=""></img>
+              <img src="/assets/img/aspMVC.png" alt=""></img>
+              <img src="/assets/img/ef.png" alt=""></img>
             </div>
           </div>
         </div>
@@ -36,14 +35,14 @@ export const About: React.FC<AboutProps> = () => {
             <div className="header">FRONT-END</div>
             <div className="ui section divider"></div>
             <div className="description">
-              <img src="/assets/img/react.png"></img>
-              <img src="/assets/img/js.jpg"></img>
-              <img src="/assets/img/html.png"></img>
-              <img src="/assets/img/css.png"></img>
-              <img src="/assets/img/sass.png"></img>
-              <img src="/assets/img/bootstrap.jpg"></img>
-              <img src="/assets/img/jquery.jpg"></img>
-              <img src="/assets/img/native.jpg"></img>
+              <img src="/assets/img/react.png" alt=""></img>
+              <img src="/assets/img/js.jpg" alt=""></img>
+              <img src="/assets/img/html.png" alt=""></img>
+              <img src="/assets/img/css.png" alt=""></img>
+              <img src="/assets/img/sass.png" alt=""></img>
+              <img src="/assets/img/bootstrap.jpg" alt=""></img>
+              <img src="/assets/img/jquery.jpg" alt=""></img>
+              <img src="/assets/img/native.jpg" alt=""></img>
             </div>
           </div>
         </div>
@@ -52,9 +51,9 @@ export const About: React.FC<AboutProps> = () => {
             <div className="header">TESTING</div>
             <div className="ui section divider"></div>
             <div className="description">
-              <img src="/assets/img/selenium.png"></img>
-              <img src="/assets/img/mstest.png"></img>
-              <img src="/assets/img/xunit.jpg"></img>
+              <img src="/assets/img/selenium.png" alt=""></img>
+              <img src="/assets/img/mstest.png" alt=""></img>
+              <img src="/assets/img/xunit.jpg" alt=""></img>
             </div>
           </div>
         </div>
@@ -63,8 +62,8 @@ export const About: React.FC<AboutProps> = () => {
             <div className="header">TOOLING</div>
             <div className="ui section divider"></div>
             <div className="description">
-              <img src="/assets/img/tfs.png"></img>
-              <img src="/assets/img/git.png"></img>
+              <img src="/assets/img/tfs.png" alt=""></img>
+              <img src="/assets/img/git.png" alt=""></img>
             </div>
           </div>
         </div>
@@ -73,10 +72,10 @@ export const About: React.FC<AboutProps> = () => {
             <div className="header">CONCEPTS</div>
             <div className="ui section divider"></div>
             <div className="description">
-              <img src="/assets/img/rest.png"></img>
-              <img src="/assets/img/oop.jpg"></img>
-              <img src="/assets/img/mvc.png"></img>
-              <img src="/assets/img/agile.jpg"></img>
+              <img src="/assets/img/rest.png" alt=""></img>
+              <img src="/assets/img/oop.jpg" alt=""></img>
+              <img src="/assets/img/mvc.png" alt=""></img>
+              <img src="/assets/img/agile.jpg" alt=""></img>
             </div>
           </div>
         </div>

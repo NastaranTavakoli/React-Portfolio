@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, Switch, useHistory, Redirect } from "react-router-dom";
 import { NavBar, SideBar } from "./components";
-import { About, Contact, Home, Projects } from "./pages";
+import { About, Contact, Home, Projects, ProjectDetails } from "./pages";
 import "./App.css";
 
 const pages = ["Home", "About", "Projects", "Contact"];
@@ -11,7 +11,7 @@ function App() {
   let path = history.location.pathname;
   path = path.slice(1, path.length);
   const [activePage, setActivePage] = useState(
-    pages.includes(path) ? path : "Home"
+    pages.includes(path) ? path : "home"
   );
 
   return (
@@ -30,13 +30,16 @@ function App() {
             <Route exact path="/about">
               <About />
             </Route>
-            <Route path="/projects">
+            <Route exact path="/projects">
               <Projects />
             </Route>
-            <Route path="/contact">
+            <Route exact path="/projects/:id">
+              <ProjectDetails />
+            </Route>
+            <Route exact path="/contact">
               <Contact />
             </Route>
-            <Redirect to="Home" />
+            <Redirect to="home" />
           </Switch>
         </section>
         <SideBar

@@ -34,7 +34,7 @@ export const NavBar: React.FC<NavBarProps> = ({
               className={`nav-item ${activePage === page ? "active" : ""}`}
               onClick={() => {
                 setActivePage(page);
-                history.push(page);
+                history.push("/" + page);
               }}
               key={index}
             >
