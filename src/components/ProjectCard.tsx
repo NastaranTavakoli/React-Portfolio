@@ -62,6 +62,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <Link className="header" to={readMoreLink}>
           {projectName}
         </Link>
+        <hr />
         <div className="meta">{projectDescription}</div>
       </div>
     </div>

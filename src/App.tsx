@@ -11,7 +11,7 @@ function App() {
   let path = history.location.pathname;
   path = path.slice(1, path.length);
   const [activePage, setActivePage] = useState(
-    pages.includes(path) ? path : "home"
+    pages.includes(path) ? path : "Home"
   );
 
   return (
@@ -24,22 +24,22 @@ function App() {
       <main>
         <section>
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/Home">
               <Home />
             </Route>
-            <Route exact path="/about">
+            <Route exact path="/About">
               <About />
             </Route>
-            <Route exact path="/projects">
+            <Route exact path="/Projects">
               <Projects />
             </Route>
-            <Route exact path="/projects/:id">
+            <Route exact path="/Projects/:id">
               <ProjectDetails />
             </Route>
-            <Route exact path="/contact">
+            <Route exact path="/Contact">
               <Contact />
             </Route>
-            <Redirect to="home" />
+            <Redirect to="Home" />
           </Switch>
         </section>
         <SideBar
