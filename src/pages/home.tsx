@@ -15,8 +15,9 @@ export const Home: React.FC<HomeProps> = () => {
             <div className="circle-text">
               <p>
                 Nas <br />
-                Tavakoli
+                Tavakoli   
               </p>
+              <p className="second-line">FullStack Developer</p> 
             </div>
           </div>
           <div className="bottom-div">

@@ -1,5 +1,5 @@
 .project-card .image {
-  height: 500px;
+  height: 350px;
 }
 
 .project-card .image img {
@@ -14,14 +14,46 @@
 .project-card .bottom a {
   font-weight: bold;
   color: cyan !important;
+  text-align: center;
+}
+
+.project-card .ui.section.divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project-card .meta {
   color: white !important;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .project-card .ui.dimmer.transition {
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1400px) {
+  .project-card .image {
+    height: 250px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-card .image {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card .image {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card .image {
+    height: 250px !important;
+  }
 }

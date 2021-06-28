@@ -14,7 +14,7 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "Placeholder Restaurant Reservation System",
+    name: "Placeholder Restaurant Reservation",
     description:
       "A restaurant reservation platform for businesses and customers using ASP .Net MVC and .Net Web APIs to communicate with the mobile app, Mar 21 – May 21",
     code: "https://github.com/NastaranTavakoli/ASP.NetCoreMVC-RestaurantReservationSystem",
@@ -92,7 +92,7 @@ const projects: Project[] = [
 export const Projects: React.FC<ProjectsProps> = () => {
   return (
     <div className="projects">
-      <div className="ui two stackable special cards">
+      <div className="ui three stackable special cards relaxed doubling">
         {projects.map((p) => (
           <ProjectCard
             projectName={p.name}

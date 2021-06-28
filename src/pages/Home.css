@@ -6,7 +6,7 @@
 
 .home .image-wrapper {
   height: 100vh;
-  background-image: url("../assets/img/nas.jpg");
+  background-image: url("../assets/img/nas.png");
   background-repeat: no-repeat;
   background-size: cover;
   transform: scaleX(-1);
@@ -57,6 +57,19 @@
   padding-left: 4rem;
   font-size: 3rem;
   font-weight: bolder;
+  display: block;
+}
+
+.home .circle-text p {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.home .circle-text .second-line {
+  font-size: 1.2rem !important;
+  margin-top: 0.8rem !important;
+  margin-left: 10px;
+  color: cyan;
 }
 
 @media (max-width: 500px) {

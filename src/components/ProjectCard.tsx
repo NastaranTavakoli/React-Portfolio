@@ -51,7 +51,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 </a>
               )}
               <Link className="ui inverted button" to={readMoreLink}>
-                Read More
+                Demo
               </Link>
             </div>
           </div>
@@ -62,7 +62,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <Link className="header" to={readMoreLink}>
           {projectName}
         </Link>
-        <hr />
+        <div className="ui section divider"></div>
         <div className="meta">{projectDescription}</div>
       </div>
     </div>
