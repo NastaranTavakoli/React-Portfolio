@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 
 type ProjectCardProps = {
@@ -50,18 +49,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   <i className="globe icon"></i>
                 </a>
               )}
-              <Link className="ui inverted button" to={readMoreLink}>
+              <a
+                className="ui inverted button"
+                href={readMoreLink}
+                target="blank"
+              >
                 Demo
-              </Link>
+              </a>
             </div>
           </div>
         </div>
         <img src={image} alt="" />
       </div>
       <div className="content bottom">
-        <Link className="header" to={readMoreLink}>
-          {projectName}
-        </Link>
+        <span className="header">{projectName}</span>
         <div className="ui section divider"></div>
         <div className="meta">{projectDescription}</div>
       </div>

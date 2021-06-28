@@ -79,6 +79,8 @@
   }
 
   .home .column.left {
-    visibility: hidden;
+    display: none;
   }
+
+
 }

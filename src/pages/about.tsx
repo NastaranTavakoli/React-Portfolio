@@ -80,7 +80,6 @@ export const About: React.FC<AboutProps> = () => {
           </div>
         </div>
       </div>
-      <hr />
       <div className="ui teal cards">
         <div className="ui fluid card">
           <div className="content">
@@ -132,7 +131,6 @@ export const About: React.FC<AboutProps> = () => {
             </div>
           </div>
         </div>
-        <hr />
 
         <div className="ui fluid card">
           <div className="content">

@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       "A restaurant reservation platform for businesses and customers using ASP .Net MVC and .Net Web APIs to communicate with the mobile app, Mar 21 – May 21",
     code: "https://github.com/NastaranTavakoli/ASP.NetCoreMVC-RestaurantReservationSystem",
-    about: "/Projects/1",
+    about: "http://www.youtube.com",
     website: "https://nastaran.azurewebsites.net/",
     image: "assets/img/projects/placeholder.png",
   },
@@ -27,15 +27,15 @@ const projects: Project[] = [
     description:
       "A mobile app for customers to login, create and manage their reservations, Developed in React native and Typescript to communicate with the .Net APIs, Jun 21",
     code: "https://github.com/NastaranTavakoli/ReservationSystem-MobileApp",
-    about: "/Projects/2",
+    about: "http://www.youtube.com",
     image: "assets/img/projects/placeholder-mobile.png",
   },
   {
     name: "Portfolio Website",
     description: "Portfolio Website built with React and Typescript, Jun 21",
     code: "https://github.com/NastaranTavakoli/React-Portfolio",
-    about: "/Projects/3",
-    website: "https://nastaran.azurewebsites.net/",
+    about: "http://www.youtube.com",
+    website: "https://nastarantavakoli.github.io/",
     image: "assets/img/projects/portfolio.png",
   },
   {
@@ -43,16 +43,16 @@ const projects: Project[] = [
     description:
       "A simple club management system for admins to perform CRUD operations and filter and sort the results using ASP .Net MVC, Apr 21",
     code: "https://github.com/NastaranTavakoli/V-VClubManagement-ASP.NET-MVC-and-XUnit",
-    about: "/Projects/4",
-    website: "https://nastaran.azurewebsites.net/",
+    about: "http://www.youtube.com",
+    website: "https://vandv-club.azurewebsites.net/",
     image: "assets/img/projects/vandv.png",
   },
   {
     name: "Notepad",
     description: "A React Notepad app for managing notes, Mar 21",
     code: "https://github.com/NastaranTavakoli/React-Notepad",
-    about: "/Projects/5",
-    website: "https://nastaran.azurewebsites.net/",
+    about: "http://www.youtube.com",
+    website: "https://nas-notepad.github.io/",
     image: "assets/img/projects/notepad.png",
   },
   {
@@ -60,7 +60,7 @@ const projects: Project[] = [
     description:
       "Web APIs for a car dealership website to talk to an angular app. Admins can register cars in the database and browse the cars. Developed in ASP .Net core applying repository pattern, Jan 21 ",
     code: "https://github.com/NastaranTavakoli/ASP.NetCore-Vega",
-    about: "/Projects/6",
+    about: "http://www.youtube.com",
     image: "assets/img/projects/vega.png",
   },
   {
@@ -68,7 +68,7 @@ const projects: Project[] = [
     description:
       "A simple order and stock management system developed using C# ADO.NET and WPF, Oct 20 - Nov 20",
     code: "https://github.com/NastaranTavakoli/OMS-C-ADO.NET-and-WPF",
-    about: "/Projects/7",
+    about: "http://www.youtube.com",
     image: "assets/img/projects/oms.png",
   },
   {
@@ -76,7 +76,7 @@ const projects: Project[] = [
     description:
       "A react native application that communicates with an ASP.NET Web Service for managing the contact information of employees, Nov 20",
     code: "https://github.com/NastaranTavakoli/Contact-Management-ReactNative ",
-    about: "/Projects/8",
+    about: "http://www.youtube.com",
     image: "assets/img/projects/contacts.png",
   },
   {
@@ -84,7 +84,7 @@ const projects: Project[] = [
     description:
       "Simple holiday apartment Website built with HTML, CSS and JS, August 20",
     code: "https://github.com/NastaranTavakoli/SorentoByTheSea-html-css-js",
-    about: "/Projects/9",
+    about: "http://www.youtube.com",
     image: "assets/img/projects/sorrento.png",
   },
 ];

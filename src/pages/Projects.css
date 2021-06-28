@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14rem 6rem 8rem 7rem;
+  padding: 14rem 6rem 8rem 8rem;
   height: max(100%, 100vh);
 }
 
@@ -11,11 +11,5 @@
   .projects {
     padding: 3rem;
     padding-right: 4rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .projects {
-    padding: 2rem !important;
   }
 }

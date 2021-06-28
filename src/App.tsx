@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import { NavBar, SideBar } from "./components";
-import { About, Contact, Home, Projects, ProjectDetails } from "./pages";
+import { About, Contact, Home, Projects } from "./pages";
 import history from "./history";
 import "./App.css";
 
@@ -13,6 +13,7 @@ function App() {
   const [activePage, setActivePage] = useState(
     pages.includes(path) ? path : "Home"
   );
+  const [sideBarVisible, setSideBarVisible] = useState(false);
 
   return (
     <div className="app">
@@ -22,7 +23,10 @@ function App() {
         setActivePage={setActivePage}
       />
       <main>
-        <section>
+        <section
+          style={{ marginRight: sideBarVisible ? "4rem" : "3rem" }}
+          onClick={() => setSideBarVisible(false)}
+        >
           <Router history={history}>
             <Switch>
               <Route exact path="/Home">
@@ -33,9 +37,6 @@ function App() {
               </Route>
               <Route exact path="/Projects">
                 <Projects />
-              </Route>
-              <Route exact path="/Projects/:id">
-                <ProjectDetails />
               </Route>
               <Route exact path="/Contact">
                 <Contact />
@@ -48,6 +49,8 @@ function App() {
           pages={pages}
           activePage={activePage}
           setActivePage={setActivePage}
+          visible={sideBarVisible}
+          setVisible={setSideBarVisible}
         />
       </main>
     </div>

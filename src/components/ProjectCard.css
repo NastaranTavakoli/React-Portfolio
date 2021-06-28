@@ -11,7 +11,7 @@
   background-color: gray !important;
 }
 
-.project-card .bottom a {
+.project-card .bottom span {
   font-weight: bold;
   color: cyan !important;
   text-align: center;
@@ -32,6 +32,10 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+
+.project-card i {
+  margin: 0 !important;
 }
 
 @media (max-width: 1400px) {

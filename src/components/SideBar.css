@@ -9,6 +9,7 @@
   height: 100vh;
   position: fixed;
   right: 0;
+  transition: width 0.3s;
 }
 
 .side-bar .item {
@@ -29,8 +30,24 @@
   display: none;
 }
 
+.side-bar .burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .side-bar .nav-items {
     display: block;
+  }
+
+  .side-bar .item {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-bar {
+    width: auto !important;
   }
 }

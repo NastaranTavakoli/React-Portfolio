@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import history from "../history";
 import "./SideBar.css";
 
@@ -6,29 +6,40 @@ type SideBarProps = {
   pages: string[];
   activePage: string;
   setActivePage: Function;
+  visible: boolean;
+  setVisible: Function;
 };
 
 export const SideBar: React.FC<SideBarProps> = ({
   pages,
   activePage,
   setActivePage,
+  visible,
+  setVisible,
 }) => {
   return (
-    <aside className="side-bar">
+    <aside className="side-bar" style={{ width: visible ? "5rem" : "3rem" }}>
       <div className="top">
         <div className="nav-items">
-          {pages.map((page, index) => (
-            <div
-              className={`item ${activePage === page ? "active" : ""}`}
-              onClick={() => {
-                setActivePage(page);
-                history.push(page);
-              }}
-              key={index}
-            >
-              {page}
+          {visible ? (
+            pages.map((page, index) => (
+              <div
+                className={`item ${activePage === page ? "active" : ""}`}
+                onClick={() => {
+                  setActivePage(page);
+                  setVisible(false);
+                  history.push(page);
+                }}
+                key={index}
+              >
+                {page}
+              </div>
+            ))
+          ) : (
+            <div onClick={() => setVisible(true)} className="burger">
+              <i className="align justify icon big"></i>
             </div>
-          ))}
+          )}
         </div>
       </div>
       <div className="bottom">

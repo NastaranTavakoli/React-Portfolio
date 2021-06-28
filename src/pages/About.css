@@ -2,10 +2,7 @@
   background-color: #1b1c1d;
   display: flex;
   flex-direction: column;
-  padding-top: 15rem;
-  padding-bottom: 4rem;
-  padding-left: 8vw;
-  padding-right: 4vw;
+  padding: 14rem 6rem 8rem 8rem;
   height: max(100%, 100vh);
 }
 
