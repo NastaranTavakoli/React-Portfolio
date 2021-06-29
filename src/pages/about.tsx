@@ -13,7 +13,7 @@ export const About: React.FC<AboutProps> = () => {
             <div className="ui section divider"></div>
             <div className="description">
               <img src="/assets/img/Csharp.png" alt=""></img>
-              <img src="/assets/img/Js.jpg" alt=""></img>
+              <img src="/assets/img/js.jpg" alt=""></img>
               <img src="/assets/img/sql.jpg" alt=""></img>
             </div>
           </div>
@@ -26,7 +26,7 @@ export const About: React.FC<AboutProps> = () => {
               <img src="/assets/img/NETCore.png" alt=""></img>
               <img src="/assets/img/API.png" alt=""></img>
               <img src="/assets/img/aspMVC.png" alt=""></img>
-              <img src="/assets/img/ef.png" alt=""></img>
+              <img src="/assets/img/EF.png" alt=""></img>
             </div>
           </div>
         </div>
