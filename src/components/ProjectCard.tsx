@@ -26,7 +26,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         onMouseEnter={() => {
           setHovered(true);
         }}
-        onFocus={() => {
+        onClick={() => {
           setHovered(true);
         }}
         onBlur={() => {
