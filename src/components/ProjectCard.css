@@ -15,6 +15,7 @@
   font-weight: bold;
   color: cyan !important;
   text-align: center;
+  font-family: "Courier New", Courier, monospace !important;
 }
 
 .project-card .ui.section.divider {
