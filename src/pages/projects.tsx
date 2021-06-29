@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       "A restaurant reservation platform for businesses and customers developed in ASP .Net MVC and .Net Web APIs to communicate with the mobile app, Mar 21 – May 21",
     code: "https://github.com/NastaranTavakoli/ASP.NetCoreMVC-RestaurantReservationSystem",
-    about: "http://www.youtube.com",
+    about: "https://youtu.be/wiPlTQ-g1wM",
     website: "https://nastaran.azurewebsites.net/",
     image: "assets/img/projects/placeholder.png",
   },
