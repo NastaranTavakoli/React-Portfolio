@@ -16,7 +16,7 @@ const projects: Project[] = [
   {
     name: "Placeholder Restaurant Reservation",
     description:
-      "A restaurant reservation platform for businesses and customers using ASP .Net MVC and .Net Web APIs to communicate with the mobile app, Mar 21 – May 21",
+      "A restaurant reservation platform for businesses and customers developed in ASP .Net MVC and .Net Web APIs to communicate with the mobile app, Mar 21 – May 21",
     code: "https://github.com/NastaranTavakoli/ASP.NetCoreMVC-RestaurantReservationSystem",
     about: "http://www.youtube.com",
     website: "https://nastaran.azurewebsites.net/",
@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     name: "Reservation System Mobile App",
     description:
-      "A mobile app for customers to login, create and manage their reservations, Developed in React native and Typescript to communicate with the .Net APIs, Jun 21",
+      "A mobile app for customers to login, create and manage their reservations, Developed in React native to communicate with the .Net APIs, Jun 21",
     code: "https://github.com/NastaranTavakoli/ReservationSystem-MobileApp",
     about: "http://www.youtube.com",
     image: "assets/img/projects/placeholder-mobile.png",
@@ -58,7 +58,7 @@ const projects: Project[] = [
   {
     name: "Vega",
     description:
-      "Web APIs for a car dealership website to talk to an angular app. Admins can register cars in the database and browse the cars. Developed in ASP .Net core applying repository pattern, Jan 21 ",
+      "Web APIs for a car dealership application to register cars in the database and browse them. Developed in ASP .Net core to talk to an angular client app, Jan 21",
     code: "https://github.com/NastaranTavakoli/ASP.NetCore-Vega",
     about: "http://www.youtube.com",
     image: "assets/img/projects/vega.png",
@@ -82,7 +82,7 @@ const projects: Project[] = [
   {
     name: "Sorrento By The Sea",
     description:
-      "Simple holiday apartment Website built with HTML, CSS and JS, August 20",
+      "A simple holiday apartment Website built with HTML, CSS and JS, August 20",
     code: "https://github.com/NastaranTavakoli/SorentoByTheSea-html-css-js",
     about: "http://www.youtube.com",
     image: "assets/img/projects/sorrento.png",
