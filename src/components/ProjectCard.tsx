@@ -5,7 +5,7 @@ type ProjectCardProps = {
   projectName: string;
   projectDescription: string;
   codeLink: string;
-  readMoreLink: string;
+  readMoreLink?: string;
   websiteLink?: string;
   image: string;
 };
@@ -55,13 +55,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   <i className="globe icon"></i>
                 </a>
               )}
-              <a
-                className="ui inverted button"
-                href={readMoreLink}
-                target="blank"
-              >
-                Demo
-              </a>
+              {readMoreLink && (
+                <a
+                  className="ui inverted button"
+                  href={readMoreLink}
+                  target="blank"
+                >
+                  Demo
+                </a>
+              )}
             </div>
           </div>
         </div>
