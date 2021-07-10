@@ -17,7 +17,7 @@ export const Home: React.FC<HomeProps> = () => {
                 Nas <br />
                 Tavakoli   
               </p>
-              <p className="second-line">FullStack Developer</p> 
+              <p className="second-line">Full Stack Developer</p> 
             </div>
           </div>
           <div className="bottom-div">
